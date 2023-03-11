@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   min-height: 150vh;
+    background: black;
+}
+.wrapper{
+    height: 280px;
+    background-color:lightskyblue;
+    max-width: 410px;
+    border-radius: 8px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+    border: 8px solid whitesmoke;
+}
+.wrapper:hover{
+    background: lightcoral;
+}
+.wrapper .active
+{
+    height: 530px;
+}
+header h1{
+    font-size: 21px;
+    font-weight: bold;
+    color: black;   
+}
+header p{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.wrapper .form{
+    margin: 20px 0 30px;
+}
+.form :where(input,button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form input{
+    font-size: 16px;
+    padding: 0 10px;
+    border: 3px solid black;
+    color: black;
+    background-color: lavenderblush;
+}
+.form button{
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: blue;
+    font-weight: 800;
+    
+}
+.form button:hover{
+    background: lightseagreen ;
+}
+.wrapper .qr-code{
+    display: flex;
+   /* opacity: 0;
+    pointer-events: none;*/
+    padding: 33px 0px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid purple;
+   /* padding: 20px 85px;*/
+    background-color: cyan;
+    
+
+}
+.wrapper .qr-code:hover {
+    background: white;
+}
+.wrapper .active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
